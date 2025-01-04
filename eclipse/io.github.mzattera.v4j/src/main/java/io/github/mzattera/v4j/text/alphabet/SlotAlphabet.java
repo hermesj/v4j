@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import io.github.mzattera.v4j.text.ivtff.IvtffLine;
 import io.github.mzattera.v4j.text.ivtff.ParseException;
@@ -522,10 +520,11 @@ public class SlotAlphabet extends IvtffAlphabet {
 		pushRight(result.slots1, "d", 0, 7);
 		pushRight(result.slots1, "s", 0, 7);
 
-		result.part2 = s;
 		if (s == null) {
+			result.part2 = "";
 			result.classification = TermClassification.REGULAR;
 		} else {
+			result.part2 = s;
 			result.classification = TermClassification.UNSTRUCTURED;
 		}
 

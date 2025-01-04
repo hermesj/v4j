@@ -5,15 +5,8 @@ package io.github.mzattera.v4j.applications;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.github.mzattera.v4j.text.ElementFilter;
 import io.github.mzattera.v4j.text.Text;
 import io.github.mzattera.v4j.text.alphabet.Alphabet;
-import io.github.mzattera.v4j.text.ivtff.IvtffPage;
-import io.github.mzattera.v4j.text.ivtff.IvtffText;
-import io.github.mzattera.v4j.text.ivtff.PageFilter;
-import io.github.mzattera.v4j.text.ivtff.VoynichFactory;
-import io.github.mzattera.v4j.text.ivtff.VoynichFactory.Transcription;
-import io.github.mzattera.v4j.text.ivtff.VoynichFactory.TranscriptionType;
 import io.github.mzattera.v4j.text.txt.BibleFactory;
 import io.github.mzattera.v4j.util.Counter;
 import io.github.mzattera.v4j.util.StringUtil;
@@ -33,7 +26,7 @@ public class FindVowels {
 	 */
 	public static void main(String[] args) {
 		try {
-			process(BibleFactory.getDocument("latin"),true);
+			process(BibleFactory.getDocument("latin"), true);
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
 			System.exit(-1);

@@ -262,6 +262,17 @@ public class Counter<T> {
 
 	/**
 	 * 
+	 * @return Number of distinct items that have been counted (notice that items
+	 *         with a total count of 0 are not returned). If more then
+	 *         {@link Integer#MAX_VALUE} items are counted, then it returns
+	 *         {@link Integer#MAX_VALUE},
+	 */
+	public int itemCount() {
+		return counts.size();
+	}
+
+	/**
+	 * 
 	 * @return a set of items / count pairs.
 	 */
 	public Set<Entry<T, Integer>> entrySet() {

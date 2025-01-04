@@ -8,9 +8,6 @@
 
 package io.github.mzattera.v4j.text.alphabet;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /**
  * The Basic EVA script alphabet (see http://www.voynich.nu/transcr.html).
  * 
